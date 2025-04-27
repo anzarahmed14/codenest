@@ -56,12 +56,10 @@ function wc_display_product_description() {
 }
 add_action('woocommerce_after_single_product_summary', 'wc_display_product_description', 15);
 
-
-
-
 function my_custom_remove_storefront_header_cart() {
     remove_action( 'storefront_header', 'storefront_product_search', 40 );
     remove_action( 'storefront_header', 'storefront_header_cart', 60 );
+    add_filter('storefront_credit_link', function(){ return false;});
 }
 add_action( 'init', 'my_custom_remove_storefront_header_cart' );
 
@@ -118,7 +116,7 @@ function my_custom_wp_footer(){
             .site-footer{
                 background-color: #000;
                 color: #FFF;
-                display:none;
+                /* display:none; */
             }
 
             #coming-soon-footer-banner{
