@@ -1,0 +1,42 @@
+# WordPress Core Files - usually you don't want to version control them
+/wp-admin/
+/wp-includes/
+
+# WordPress content you may want to ignore
+# (Except themes and plugins you are developing)
+wp-content/uploads/
+wp-content/cache/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/object-cache.php
+
+# Ignore environment-specific files
+.env
+*.log
+*.sql
+*.tar.gz
+*.zip
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Composer dependencies (if you are using Composer)
+/vendor/
+
+# Node dependencies (if you are using npm/yarn)
+/node_modules/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+
+# Ignore SASS / SCSS cache
+.sass-cache/
+wp-content/uploads/wc-logs/wc_logger-2025-03-27-2ff8a14111236422c5834bfbe52e6929.log
+wp-content/uploads/wc-logs/fatal-errors-2025-03-27-688f803e17132d70f52165606bff0785.log
+
+wp-config.php
+.htaccess
